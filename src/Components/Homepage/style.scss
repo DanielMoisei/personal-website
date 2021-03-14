@@ -1,27 +1,6 @@
-$light-background-colour: #FFFFFF;
-$light-primary-colour: #51BBFE;
-$light-secondary-colour: #22577A;
-$light-primary-hover: #439CD4;
-$light-secondary-hover: #12354B;
-$light-primary-card-colour: #EDF8FF;
-$light-secondary-card-colour: #E9EFF2;
-$light-card-text-colour: #22577A;
-$light-git-button-colour: #000000;
-$light-behance-button-colour: #053EFF;
-
-
-$dark-background-colour: #262626;
-$dark-primary-colour: #7997D3;
-$dark-secondary-colour: #6671C2;
-$dark-primary-hover: #516A9C;
-$dark-secondary-hover: #3D4583;
-$dark-primary-card-colour: #2D3036;
-$dark-secondary-card-colour: #2C2D35;
-$dark-card-text-colour: #FFFFFF;
-$dark-git-button-colour: #FFFFFF;
-$dark-behance-button-colour: #FFFFFF;
-
 .homepage {
+  display: flex;
+  flex-flow: column;
   h1 {
     font-size: 2.125rem;
     font-weight: 800;
@@ -31,90 +10,28 @@ $dark-behance-button-colour: #FFFFFF;
     font-size: 1.25rem;
     font-weight: 700;
     margin: 1.5em auto 0 18%;
-    max-width: 23em;
+    max-width: 50%;
   }
   #buttons {
     margin: 1.5em auto 0 18%;
     .primary-button {
+      font-size: 1rem;
       font-weight: 800;
-      padding: 1em 2em;
+      padding: .6em 1.2em;
       border: none;
       border-radius: 99em;
       color: #fff;
       cursor: pointer;
-      outline: none;
     }
     .secondary-button {
+      font-size: 1rem;
       font-weight: 800;
-      padding: 1em 2em;
+      padding: .6em 1.2em;
       border: none;
       border-radius: 99em;
       color: #fff;
       cursor: pointer;
-      margin-left: 1.5rem;
-    }
-  }
-}
-
-.light-homepage {
-  #buttons {
-    .primary-button {
-      background: $light-primary-colour;
-      background-image: linear-gradient(to right, transparent 50%, transparent 50%);
-      background-size: 200% 50%;
-      background-position: right bottom;
-      background-clip: padding-box;
-      -webkit-transition: all 0.25s ease-out;
-      transition: all 0.25s ease-out;
-    }
-    .primary-button:hover {
-      background-position: left bottom;
-      background-image: linear-gradient(to right, $light-primary-hover 50%, transparent 50%);
-    }
-    .secondary-button {
-      background: $light-secondary-colour;
-      background-image: linear-gradient(to right, transparent 50%, transparent 50%);
-      background-size: 200% 50%;
-      background-position: right bottom;
-      background-clip: padding-box;
-      -webkit-transition: all 0.25s ease-out;
-      transition: all 0.25s ease-out;
-    }
-    .secondary-button:hover {
-      background-position: left bottom;
-      background-image: linear-gradient(to right, $light-secondary-hover 50%, transparent 50%);
-    }
-  }
-}
-
-.dark-homepage {
-  color: #ffffff;
-  #buttons {
-    .primary-button {
-      background: $dark-primary-colour;
-      background-image: linear-gradient(to right, transparent 50%, transparent 50%);
-      background-size: 200% 50%;
-      background-position: right bottom;
-      background-clip: padding-box;
-      -webkit-transition: all 0.25s ease-out;
-      transition: all 0.25s ease-out;
-    }
-    .primary-button:hover {
-      background-position: left bottom;
-      background-image: linear-gradient(to right, $dark-primary-hover 50%, transparent 50%);
-    }
-    .secondary-button {
-      background: $dark-secondary-colour;
-      background-image: linear-gradient(to right, transparent 50%, transparent 50%);
-      background-size: 200% 50%;
-      background-position: right bottom;
-      background-clip: padding-box;
-      -webkit-transition: all 0.25s ease-out;
-      transition: all 0.25s ease-out;
-    }
-    .secondary-button:hover {
-      background-position: left bottom;
-      background-image: linear-gradient(to right, $dark-secondary-hover 50%, transparent 50%);
+      margin-left: 1.5em;
     }
   }
 }
@@ -138,7 +55,7 @@ $dark-behance-button-colour: #FFFFFF;
     font-size: 1rem;
     font-weight: 500;
     margin: 3% auto 0 10%;
-    max-width: 80%;
+    max-width: 79%;
     a {
       font-weight: 700;
       text-decoration: none;
@@ -151,10 +68,12 @@ $dark-behance-button-colour: #FFFFFF;
     margin: 2.5em auto 2.5em 10%;
     display: flex;
     flex-flow: row;
+    a {
+      text-decoration: none;
+    }
     .try-button, .git-button, .design-button {
       font-size: 1rem;
       font-weight: 700;
-      outline: none;
       margin: 0 1.5em 0 0;
       border-radius: 99rem;
       padding: .15em 0;
@@ -187,66 +106,8 @@ $dark-behance-button-colour: #FFFFFF;
   }
 }
 
-.light-project {
-  background: $light-primary-card-colour;
-  color: $light-card-text-colour;
-  a {
-    color: $light-primary-colour;
-  }
-  .try-button:hover {
-    background-position: left bottom;
-    background-image: linear-gradient(to right, #B0C8D7 50%, transparent 50%);
-  }
-  .git-button:hover {
-    background-position: left bottom;
-    background-image: linear-gradient(to right, #A6AEB3 50%, transparent 50%);
-  }
-  .design-button:hover {
-    background-position: left bottom;
-    background-image: linear-gradient(to right, #A7C0FF 50%, transparent 50%);
-  }
-  .try-button {
-    border: 3px solid $light-secondary-colour;
-    color: $light-secondary-colour;
-  }
-  .git-button {
-    border: 3px solid $light-git-button-colour;
-    color: $light-git-button-colour;
-  }
-  .design-button {
-    border: 3px solid $light-behance-button-colour;
-    color: $light-behance-button-colour;
-  }
-}
-
-.dark-project {
-  background: $dark-primary-card-colour;
-  color: $dark-card-text-colour;
-  a {
-    color: $dark-primary-colour;
-  }
-  .try-button:hover {
-    background-position: left bottom;
-    background-image: linear-gradient(to right, #444F65 50%, transparent 50%);
-  }
-  .git-button:hover {
-    background-position: left bottom;
-    background-image: linear-gradient(to right, #6C6E72 50%, transparent 50%);
-  }
-  .design-button:hover {
-    background-position: left bottom;
-    background-image: linear-gradient(to right, #6C6E72 50%, transparent 50%);
-  }
-  .try-button {
-    border: 3px solid $dark-primary-colour;
-    color: $dark-primary-colour;
-  }
-  .git-button {
-    border: 3px solid $dark-git-button-colour;
-    color: $dark-git-button-colour;
-  }
-  .design-button {
-    border: 3px solid $dark-behance-button-colour;
-    color: $dark-behance-button-colour;
-  }
+#thanks {
+  font-size: 2.125rem;
+  font-weight: 700;
+  margin: 2em auto;
 }

@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import {Route, Switch} from "react-router-dom"
 
 import Homepage from "./Components/Homepage"
@@ -10,7 +10,14 @@ import "./style.scss"
 
 export default function App() {
 
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("")
+
+  useEffect(() => {
+    let time = new Date()
+    let mode
+    7 < time.getHours() && time.getHours() < 18 ? mode = "light" : mode = "dark"
+    setTheme(mode)
+  }, [])
 
   return (
     <div id={`${theme}-app`}>

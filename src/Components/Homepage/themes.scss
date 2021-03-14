@@ -1,0 +1,176 @@
+$light-background-colour: #FFFFFF;
+$light-primary-colour: #51BBFE;
+$light-secondary-colour: #22577A;
+$light-primary-hover: #439CD4;
+$light-secondary-hover: #12354B;
+$light-primary-card-colour: #EDF8FF;
+$light-secondary-card-colour: #E9EFF2;
+$light-card-text-colour: #22577A;
+$light-try-button-colour: #0175BF;
+$light-try-button-hover: #A6D1EC;
+$light-card-buttons-colour: #000000;
+$light-card-buttons-hover: #A6AEB3;
+
+
+$dark-background-colour: #262626;
+$dark-primary-colour: #7997D3;
+$dark-secondary-colour: #6671C2;
+$dark-primary-hover: #516A9C;
+$dark-secondary-hover: #3D4583;
+$dark-primary-card-colour: #2D3036;
+$dark-secondary-card-colour: #2C2D35;
+$dark-card-text-colour: #FFFFFF;
+$dark-try-button-colour: #7997D3;
+$dark-try-button-hover: #444F65;
+$dark-card-buttons-colour: #FFFFFF;
+$dark-card-buttons-hover: #6C6E72;
+
+.light-homepage {
+  #buttons {
+    .primary-button {
+      background: $light-primary-colour;
+      background-image: linear-gradient(to right, transparent 50%, transparent 50%);
+      background-size: 200% 50%;
+      background-position: right bottom;
+      background-clip: padding-box;
+      -webkit-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+    }
+    .primary-button:hover {
+      background-position: left bottom;
+      background-image: linear-gradient(to right, $light-primary-hover 50%, transparent 50%);
+      transform: scale(.95);
+    }
+    .secondary-button {
+      background: $light-secondary-colour;
+      background-image: linear-gradient(to right, transparent 50%, transparent 50%);
+      background-size: 200% 50%;
+      background-position: right bottom;
+      background-clip: padding-box;
+      -webkit-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+    }
+    .secondary-button:hover {
+      background-position: left bottom;
+      background-image: linear-gradient(to right, $light-secondary-hover 50%, transparent 50%);
+      transform: scale(.95);
+    }
+  }
+}
+
+.dark-homepage {
+  color: #ffffff;
+  #buttons {
+    .primary-button {
+      background: $dark-primary-colour;
+      background-image: linear-gradient(to right, transparent 50%, transparent 50%);
+      background-size: 200% 50%;
+      background-position: right bottom;
+      background-clip: padding-box;
+      -webkit-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+    }
+    .primary-button:hover {
+      background-position: left bottom;
+      background-image: linear-gradient(to right, $dark-primary-hover 50%, transparent 50%);
+      transform: scale(.95);
+    }
+    .secondary-button {
+      background: $dark-secondary-colour;
+      background-image: linear-gradient(to right, transparent 50%, transparent 50%);
+      background-size: 200% 50%;
+      background-position: right bottom;
+      background-clip: padding-box;
+      -webkit-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+    }
+    .secondary-button:hover {
+      background-position: left bottom;
+      background-image: linear-gradient(to right, $dark-secondary-hover 50%, transparent 50%);
+      transform: scale(.95);
+    }
+  }
+}
+
+.light-project {
+  color: $light-card-text-colour;
+  a {
+    color: $light-primary-colour;
+  }
+  .try-button:hover {
+    background-position: left bottom;
+    background-image: linear-gradient(to right, $light-try-button-hover 50%, transparent 50%);
+    transform: scale(.95);
+  }
+  .git-button:hover {
+    background-position: left bottom;
+    background-image: linear-gradient(to right, $light-card-buttons-hover 50%, transparent 50%);
+    transform: scale(.95);
+  }
+  .design-button:hover {
+    background-position: left bottom;
+    background-image: linear-gradient(to right, $light-card-buttons-hover 50%, transparent 50%);
+    transform: scale(.95);
+  }
+  .try-button {
+    border: 3px solid $light-try-button-colour;
+    color: $light-try-button-colour;
+  }
+  .git-button {
+    border: 3px solid $light-card-buttons-colour;
+    color: $light-card-buttons-colour;
+  }
+  .design-button {
+    border: 3px solid $light-card-buttons-colour;
+    color: $light-card-buttons-colour;
+  }
+}
+
+.dark-project {
+  color: $dark-card-text-colour;
+  a {
+    color: $dark-primary-colour;
+  }
+  .try-button:hover {
+    background-position: left bottom;
+    background-image: linear-gradient(to right, $dark-try-button-hover 50%, transparent 50%);
+    transform: scale(.95);
+  }
+  .git-button:hover {
+    background-position: left bottom;
+    background-image: linear-gradient(to right, $dark-card-buttons-hover 50%, transparent 50%);
+    transform: scale(.95);
+  }
+  .design-button:hover {
+    background-position: left bottom;
+    background-image: linear-gradient(to right, $dark-card-buttons-hover 50%, transparent 50%);
+    transform: scale(.95);
+  }
+  .try-button {
+    border: 3px solid $dark-try-button-colour;
+    color: $dark-try-button-colour;
+  }
+  .git-button {
+    border: 3px solid $dark-card-buttons-colour;
+    color: $dark-card-buttons-colour;
+  }
+  .design-button {
+    border: 3px solid $dark-card-buttons-colour;
+    color: $dark-card-buttons-colour;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .light-project {
+    background: $light-primary-card-colour;
+  }
+  .light-project:nth-of-type(3) {
+    background: $light-secondary-card-colour;
+  }
+  .dark-project {
+    background: $dark-primary-card-colour;
+  }
+  .dark-project:nth-of-type(3) {
+    background: $dark-secondary-card-colour;
+  }
+}

@@ -9,7 +9,7 @@
 /coverage
 
 # UKFW Firebase Key
-/src/Components/UKFW/Firebase.js
+/src/Components/UKFWeb/Firebase.js
 
 # production
 /build

@@ -1,0 +1,74 @@
+#footer {
+  width: 1000px;
+  display: flex;
+  flex-flow: column;
+  margin: 50px auto 0;
+}
+
+#nav {
+  width: 1000px;
+	display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: auto;
+	border-bottom: thin solid #002147;
+	padding-bottom: 50px;
+  color: #002147;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#social-icons {
+  width: 270px;
+  height: 40px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto 0;
+}
+
+#Linkedin {
+	background-image: url("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615823771/RateableValuations/linkedIn_zmy60v.png");
+	width: 40px;
+	height: 38px;
+	transition: 0.5s all;
+}
+
+#Facebook {
+	background-image: url("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615823771/RateableValuations/facebook_xr7qcv.png");
+	width: 20px;
+	height: 40px;
+	transition: 0.5s all;
+}
+
+#Twitter {
+	background-image: url("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615823771/RateableValuations/twitter_vwh9i1.png");
+	width: 40px;
+	height: 32px;
+	transition: 0.5s all;
+}
+
+#Linkedin:hover {
+	background-image: url("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615823771/RateableValuations/linkedInHover_tfrpk4.png");
+}
+
+#Facebook:hover {
+	background-image: url("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615823771/RateableValuations/facebookHover_tadlhw.png");
+}
+
+#Twitter:hover {
+	background-image: url("https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615823771/RateableValuations/twitterHover_kktokx.png");
+}
+
+#company-info {
+	margin: 50px 0;
+  color: #002147;
+  font-size: 12pt;
+  font-weight: 700;
+  text-align: center;
+}
+
+#legal-p {
+  cursor: pointer;
+}

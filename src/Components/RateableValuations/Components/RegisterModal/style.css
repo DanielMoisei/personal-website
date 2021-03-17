@@ -1,0 +1,166 @@
+#keep-div {
+	display: flex;
+}
+
+#keep-text {
+	font-size: 14pt;
+	font-weight: 500;
+	color: #002147;
+	margin: 0 0 0 5px;
+}
+
+#keep-box {
+	border-color: #002147;
+	width: 20px;
+	height: 20px;
+}
+
+#secondary-login-buttons {
+	display: flex;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#login-button {
+	background-color: #002147;
+	border-radius: 15px;
+	text-align: center;
+	width: 500px;
+	padding: 10px 0;
+	margin: 30px auto 0 auto;
+	color: #fff;
+	font-size: 16pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#create-button {
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: center;
+	width: 240px;
+	padding: 10px 0;
+	margin: 20px 10px 0 auto;
+	box-shadow: inset 0px 0px 0px 3px #F47721;
+	color: #F47721;
+	font-size: 16pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#cancel-button {
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: center;
+	width: 240px;
+	padding: 10px 0;
+	margin: 20px auto 0 10px;
+	box-shadow: inset 0px 0px 0px 3px #002147;
+	color: #002147;
+	font-size: 16pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+/* START FROM HERE TOMORROW */
+#register-modal {
+		background-color: #fff;
+		width: 600px;
+		border-radius: 15px;
+		height: 634px;
+		align-self: center;
+		margin: 0 auto;
+}
+
+#register-modal h2 {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #002147;
+	margin: 50px 0px 0px 50px;
+}
+
+#register-form {
+	margin: 30px 50px 0px 50px;
+}
+
+#terms-div {
+	display: flex;
+}
+
+#terms-text {
+	font-size: 14pt;
+	font-weight: 500;
+	color: #002147;
+	margin: 0 0 0 5px;
+}
+
+#terms-orange {
+	color: #F47721;
+	font-weight: 700;
+}
+
+#terms-orange:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#terms-box {
+	border-color: #002147;
+	width: 20px;
+	height: 20px;
+}
+
+#secondary-register-buttons {
+	display: flex;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#register-button {
+	background-color: #F47721;
+	border-radius: 15px;
+	text-align: center;
+	width: 500px;
+	padding: 10px 0;
+	margin: 30px auto 0 auto;
+	color: #fff;
+	font-size: 16pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#login2-button {
+	background-color: #fff;
+	border-radius: 15px;
+	text-align: center;
+	width: 240px;
+	padding: 10px 0;
+	margin: 20px 10px 0 auto;
+	box-shadow: inset 0px 0px 0px 3px #002147;
+	color: #002147;
+	font-size: 16pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#login2-button:hover {
+	background-color: #002147;
+	color: #fff;
+}
+
+#cancel-button:hover {
+	background-color: #002147;
+	color: #fff;
+}
+
+#create-button:hover {
+	background-color: #F47721;
+	color: #fff;
+}
+
+#pass-error {
+	display: none;
+	margin-left: 127px;
+	color: red;
+	font-size: 14pt;
+	font-weight: 600;
+}

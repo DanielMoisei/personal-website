@@ -1,0 +1,31 @@
+#CTA-band-background {
+  background-color: #002147;
+}
+
+#CTA-band {
+  width: 1000px;
+	display: flex;
+  flex-flow: row;
+  padding: 20px 0;
+  margin: auto;
+}
+
+#CTA-band p {
+	color: #fff;
+  font-weight: 600;
+	font-size: 26px;
+  margin: auto 0;
+}
+
+#band-button {
+	color: #fff;
+  font-weight: 800;
+	font-size: 20px;
+	background-color: #f47721;
+	border-radius: 13px;
+	padding: 15px 20px;
+	margin: 0 0 0 auto;
+	transition: 0.5s all;
+  border: none;
+  cursor: pointer;
+}

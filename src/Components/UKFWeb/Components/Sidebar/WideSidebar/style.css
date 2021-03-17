@@ -1,0 +1,109 @@
+#wide-sidebar-active {
+	background-color: #192932;
+	width: 300px;
+	height: 100vh;
+	z-index: 4;
+	position: fixed;
+	animation: slide-in 0.5s ease-out 1;
+}
+
+@keyframes slide-in {
+	from {transform: translateX(-100%);}
+	to {transform: translateX(0);}
+}
+
+#wide-sidebar-hidden {
+	background-color: #192932;
+	width: 300px;
+	height: 100vh;
+	z-index: 4;
+	position: fixed;
+	transition: all 0.5s ease-in;
+	transform: translateX(-100%);
+}
+
+#wide-overlay-active {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(1, 11, 25, 0.4);
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+#wide-overlay-hidden {
+	display: none;
+}
+
+#wide-sidebar-logo {
+	width: 200px;
+	height: 40px;
+	margin: 8.5px auto;
+	display: flex;
+}
+
+#wide-sidebar-search {
+	width: 300px;
+}
+
+#wide-sidebar-search:hover {
+	background: #fff;
+}
+
+#wide-sidebar-search:hover h3 {
+	color: #192932;
+}
+
+#wide-search-content {
+	display: flex;
+	flex-flow: row;
+	margin: 20px auto;
+	width: 200px;
+	height: 55px;
+}
+
+#wide-sidebar-search-icon {
+	width: 26px;
+	height: 26px;
+  margin: auto 0 auto 6px;
+}
+
+#wide-search-text {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin: auto 0 auto auto;
+}
+
+#wide-sidebar-leave {
+	width: 300px;
+}
+
+#wide-sidebar-leave:hover {
+	background: #fff;
+}
+
+#wide-sidebar-leave:hover h3 {
+	color: #192932;
+}
+
+#wide-leave-content {
+	display: flex;
+	flex-flow: row;
+	margin: 20px auto;
+	width: 200px;
+	height: 55px;
+}
+
+#wide-sidebar-leave-icon {
+	width: 32px;
+	height: 32px;
+  margin: auto 6px auto 0;
+}
+
+#wide-leave-text {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin: auto;
+}

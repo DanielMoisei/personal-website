@@ -1,0 +1,48 @@
+#thin-sidebar {
+	background-color: #192932;
+	width: 55px;
+	height: 100vh;
+}
+
+#thin-sidebar-logo {
+	width: 38px;
+	height: 38px;
+	margin: 8.5px auto;
+	display: flex;
+}
+
+#thin-sidebar-search-square {
+	margin-top: 20px;
+	width: 55px;
+	height: 55px;
+	z-index: 2;
+	display: flex;
+}
+
+#thin-sidebar-search-square:hover {
+	background: #fff;
+}
+
+#thin-sidebar-search {
+	width: 26px;
+	height: 26px;
+	margin: auto;
+}
+
+#thin-sidebar-leave-square {
+	margin-top: 20px;
+	width: 55px;
+	height: 55px;
+	z-index: 2;
+	display: flex;
+}
+
+#thin-sidebar-leave-square:hover {
+	background: #fff;
+}
+
+#thin-sidebar-leave {
+	width: 32px;
+	height: 32px;
+	margin: auto 5px auto 10px;
+}

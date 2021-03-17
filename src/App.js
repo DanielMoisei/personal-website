@@ -10,13 +10,16 @@ import "./style.scss"
 
 export default function App() {
 
-  const [theme, setTheme] = useState("")
+  const [theme, setTheme] = useState("light")
+  const [isToggled, setIsToggled] = useState(false)
 
   useEffect(() => {
     let time = new Date()
-    let mode
+    let mode, togVal
     7 < time.getHours() && time.getHours() < 18 ? mode = "light" : mode = "dark"
+    7 < time.getHours() && time.getHours() < 18 ? togVal = false : togVal = true
     setTheme(mode)
+    setIsToggled(togVal)
   }, [])
 
   return (
@@ -25,7 +28,10 @@ export default function App() {
       <Switch>
 
         <Route exact path="/">
-          <Homepage theme={theme} setTheme={setTheme} />
+          <Homepage
+            theme={theme} setTheme={setTheme}
+            isToggled={isToggled} setIsToggled={setIsToggled}
+          />
         </Route>
 
         <Route path="/cv">
@@ -36,10 +42,10 @@ export default function App() {
         </Route>
 
         <Route path="/rv">
-          <RateableValuations />
+          {window.scrollY < 1 ? <RateableValuations /> : null}
         </Route>
 
-        <Route path="/byte">
+        <Route path="/bytes">
           <Bytes />
         </Route>
 

@@ -29,6 +29,10 @@ $dark-mobile-try-button: #7997D3;
       display: flex;
       flex-flow: column;
       align-items: center;
+      a {
+        width: 100%;
+        font-size: 1.25rem;
+      }
       .primary-button {
         width: 100%;
         font-size: 1.25rem;

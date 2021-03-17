@@ -1,0 +1,24 @@
+#shield-container {
+  width: 1000px;
+	display: flex;
+  flex-flow: row;
+  margin: 100px auto;
+}
+
+#shield-text h2 {
+  color: #fff;
+	font-weight: 900;
+	font-size: 40px;
+}
+
+#shield-text p {
+  color: #fff;
+  font-size: 20px;
+	margin: 20px 100px 0 0;
+}
+
+#shield-image {
+	width: 128px;
+	height: 157px;
+	margin: auto;
+}

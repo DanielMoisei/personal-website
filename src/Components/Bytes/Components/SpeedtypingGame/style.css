@@ -1,0 +1,72 @@
+#speed-game body {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+#speed-game {
+	margin: 50px auto;
+	display: flex;
+	flex-flow: column;
+	color: #7291D1;
+}
+
+.typeGameButton {
+	width: 150px;
+	height: 60px;
+	background: #7291D1;
+	margin: 0 auto;
+	padding: 10px 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  user-select: none;
+	cursor: pointer;
+}
+
+#speed-game button:disabled {
+  cursor: not-allowed;
+  background: #a5a2a2;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+#speed-game h1 {
+  font-size: 40px;
+	margin: 0 0 20px;
+	text-align: center;
+	font-weight: 800;
+}
+
+#speed-game h2 {
+	font-size: 30px;
+	margin: 20px 0 0;
+	text-align: center;
+	font-weight: 800;
+}
+
+#speed-game h4 {
+	font-size: 20px;
+	margin: 20px 0;
+	text-align: center;
+	font-weight: 700;
+}
+
+#speed-game textarea {
+  width: 50vw;
+  height: 400px;
+	background: #7291D1;
+	border: 3px solid black;
+	padding: 10px;
+  font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 20px;
+  outline: none;
+	resize: none;
+}
+
+#speed-game textarea:disabled {
+  background-color: #a5a2a2;
+}

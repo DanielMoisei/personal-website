@@ -1,0 +1,75 @@
+#rv-header {
+  height: 85px;
+  background-color: #fff;
+  display: flex;
+  z-index: 1;
+}
+
+#rv-header-logos {
+  margin: auto 0;
+  display: flex;
+  flex-flow: row;
+}
+
+#RVLogo {
+  border-right: thin solid #000;
+  padding: 0 30px 0 0;
+  margin: auto 0;
+}
+
+#RICSLogo {
+  margin: auto 0 auto 30px;
+}
+
+#rv-header-buttons {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin: 0 65px 0 auto;
+}
+
+.account-buttons {
+  display: flex;
+  flex-flow: row;
+  color: #002147;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+}
+
+#key {
+  height: 27px;
+  margin: 0 10px 0 0;
+}
+
+#user {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
+}
+
+#rv-contact-button {
+  background-color: #f47721;
+  padding: 15px 20px;
+  border-radius: 13px;
+  color: #ffffff;
+  font-weight: 700;
+	transition: 0.5s all;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#rv-app-leave {
+  height: 30px;
+  width: 15px;
+  margin: auto 30px;
+  cursor: pointer;
+}
+
+#rv-app-leave img {
+  height: inherit;
+  width: inherit;
+}

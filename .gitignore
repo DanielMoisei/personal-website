@@ -11,6 +11,12 @@
 # UKFW Firebase Key
 /src/Components/UKFWeb/Firebase.js
 
+# Rerouting rules
+/.htaccess
+
+# Local resources
+/src/Resources
+
 # production
 /build
 

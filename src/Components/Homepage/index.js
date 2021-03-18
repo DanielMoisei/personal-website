@@ -118,7 +118,7 @@ export default function Homepage(props) {
       <div className={`${theme}-project project-card`}>
         <h2>03. Byte-sized projects</h2>
         <img
-          src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1615569617/Personal%20Website/ByteImage_oczb87.png"
+          src="https://res.cloudinary.com/dbtu3hb0f/image/upload/v1616069554/Personal%20Website/ByteImage_wsufrr.jpg"
           alt="byte"
         />
         <p>While not a full-fledged product, I believe this collection of mini-projects that I've built while learning various concepts and ideas is important and interesting enough to earn itself a spot here.</p>

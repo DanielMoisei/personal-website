@@ -174,3 +174,71 @@ $dark-card-buttons-hover: #6C6E72;
     background: $dark-secondary-card-colour;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .light-homepage {
+    #buttons {
+      .primary-button:hover {
+        background-position: none;
+        background-image: none;
+        transform: scale(.95);
+      }
+      .secondary-button:hover {
+        background-position: none;
+        background-image: none;
+        transform: scale(.95);
+      }
+    }
+  }
+
+  .dark-homepage {
+    #buttons {
+      .primary-button:hover {
+        background-position: none;
+        background-image: none;
+        transform: scale(.95);
+      }
+      .secondary-button:hover {
+        background-position: none;
+        background-image: none;
+        transform: scale(.95);
+      }
+    }
+  }
+
+  .light-project {
+    .try-button:hover {
+      background-position: none;
+      background-image: none;
+      transform: scale(.95);
+    }
+    .git-button:hover {
+      background-position: none;
+      background-image: none;
+      transform: scale(.95);
+    }
+    .design-button:hover {
+      background-position: none;
+      background-image: none;
+      transform: scale(.95);
+    }
+  }
+
+  .dark-project {
+    .try-button:hover {
+      background-position: none;
+      background-image: none;
+      transform: scale(.95);
+    }
+    .git-button:hover {
+      background-position: none;
+      background-image: none;
+      transform: scale(.95);
+    }
+    .design-button:hover {
+      background-position: none;
+      background-image: none;
+      transform: scale(.95);
+    }
+  }
+}

@@ -20,11 +20,8 @@ export default function App() {
 
   return (
     <div id="rv-app-back">
-      {showLogin ? <LoginModal setShowLogin={setShowLogin} setShowRegister={setShowRegister} setIsRegisterOrigin={setIsRegisterOrigin} /> : null}
-      {showRegister ? <RegisterModal setShowLogin={setShowLogin} setShowRegister={setShowRegister} setShowTerms={setShowTerms} setIsRegisterOrigin={setIsRegisterOrigin} /> : null}
-      {showTerms ? <TermsModal setShowRegister={setShowRegister} setShowTerms={setShowTerms} isRegisterOrigin={isRegisterOrigin} setIsRegisterOrigin={setIsRegisterOrigin} /> : null}
       <Header setShowLogin={setShowLogin} setShowRegister={setShowRegister} setIsRegisterOrigin={setIsRegisterOrigin} />
-      <div id="hero-section">
+      <div id="rv-hero-section">
         <Search />
         <Cards />
         <Shield />
@@ -32,6 +29,9 @@ export default function App() {
       <FeesInfo />
       <CTABand />
       <Footer setShowTerms={setShowTerms}/>
+      {showLogin ? <LoginModal setShowLogin={setShowLogin} setShowRegister={setShowRegister} setIsRegisterOrigin={setIsRegisterOrigin} /> : null}
+      {showRegister ? <RegisterModal setShowLogin={setShowLogin} setShowRegister={setShowRegister} setShowTerms={setShowTerms} setIsRegisterOrigin={setIsRegisterOrigin} /> : null}
+      {showTerms ? <TermsModal setShowRegister={setShowRegister} setShowTerms={setShowTerms} isRegisterOrigin={isRegisterOrigin} setIsRegisterOrigin={setIsRegisterOrigin} /> : null}
     </div>
   )
 }

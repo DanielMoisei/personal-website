@@ -1,0 +1,80 @@
+$light-primary-colour: #51BBFE;
+$light-primary-hover: #439CD4;
+
+$dark-primary-colour: #7997D3;
+$dark-primary-hover: #516A9C;
+
+
+.lost-page {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  img {
+    font-size: 1rem;
+    width: 15em;
+    height: 12.25em;
+    margin: auto auto 0;
+    @media screen and (max-width: 600px) {
+      width: 10em;
+      height: 8.25em;
+    }
+  }
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: .5em auto 0;
+    text-align: center;
+    max-width: 600px;
+    @media screen and (max-width: 600px) {
+      max-width: 80%;
+    }
+  }
+  .primary-button {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: .6em 1.2em;
+    border: none;
+    border-radius: 99em;
+    margin: 2em auto auto;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.light-lost {
+  color: #22577A;
+  .primary-button {
+    background: $light-primary-colour;
+    background-image: linear-gradient(to right, transparent 50%, transparent 50%);
+    background-size: 200% 50%;
+    background-position: right bottom;
+    background-clip: padding-box;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .primary-button:hover {
+    background-position: left bottom;
+    background-image: linear-gradient(to right, $light-primary-hover 50%, transparent 50%);
+    transform: scale(.95);
+  }
+}
+
+.dark-lost {
+  color: #fff;
+  .primary-button {
+    background: $dark-primary-colour;
+    background-image: linear-gradient(to right, transparent 50%, transparent 50%);
+    background-size: 200% 50%;
+    background-position: right bottom;
+    background-clip: padding-box;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+  .primary-button:hover {
+    background-position: left bottom;
+    background-image: linear-gradient(to right, $dark-primary-hover 50%, transparent 50%);
+    transform: scale(.95);
+  }
+}

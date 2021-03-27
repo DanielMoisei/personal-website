@@ -5,6 +5,7 @@ import Homepage from "./Components/Homepage"
 import UKFWeb from "./Components/UKFWeb"
 import RateableValuations from "./Components/RateableValuations"
 import Bytes from "./Components/Bytes"
+import Error404 from "./Components/Error404"
 
 import "./style.scss"
 
@@ -34,19 +35,20 @@ export default function App() {
           />
         </Route>
 
-        <Route path="/cv">
-        </Route>
-
         <Route path="/ukfw">
           <UKFWeb />
         </Route>
 
         <Route path="/rv">
-          {window.scrollY < 1 ? <RateableValuations /> : null}
+          <RateableValuations />
         </Route>
 
         <Route path="/bytes">
           <Bytes />
+        </Route>
+
+        <Route>
+          <Error404 theme={theme} />
         </Route>
 
       </Switch>

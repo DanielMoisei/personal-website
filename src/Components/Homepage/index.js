@@ -12,9 +12,6 @@ export default function Homepage(props) {
 
   useEffect(() => {
     isToggled ? setTheme("dark") : setTheme("light")
-    return () => {
-      window.scrollTo(0, 0)
-    }
   }, [isToggled])
 
   return (
@@ -48,8 +45,8 @@ export default function Homepage(props) {
           alt="ukfoodweb"
         />
         <p>UK Food Web was a project that I joined some time after its ideation and inception. My main focus was on improving the existing design and user experience, and later on, working on brand new features that expanded on the product's mission.</p>
-        <p>When I made the transition from designer to developer, I chose this project to be the one I build while learning. I did this for two reasons: because it was a familiar concept, and because it allowed me to compare my results with a real product that has a real userbase.</p>
-        <p>The live, original version can be found <a href="https://ukfoodweb.info/app/home" target="_blank" rel="noreferrer">here</a>, while mine is below.</p>
+        <p>When I made the transition from designer to developer, I chose to build this project while learning. I did this for two reasons: because it was a familiar concept, and because it allowed me to compare my results with a real product that has a real userbase. The frontend is built with React, and the backend uses Firebase's Realtime Database.</p>
+        <p>The original version can be found <a href="https://ukfoodweb.info/app/home" target="_blank" rel="noreferrer">here</a>, while mine is below.</p>
         <div className="project-buttons">
 
           <Link to="/ukfw" className="try-button">
